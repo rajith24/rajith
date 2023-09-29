@@ -1,5 +1,12 @@
+## Deployment
 
-![Thumbnail Video Tutorial](https://github.com/wass08/r3f-portfolio-responsive/assets/6551176/bf148f55-e6ba-46c4-b53d-9f93e1d1f99f)
+Follow these steps to deploy your Vite.js project to GitHub Pages:
 
-[Video tutorial](https://youtube.com/@WawaSensei)
+1. Edit the `vite.config.js` file and set your base URL to match your repository name. Replace `repo-name` with your actual repository name.
 
+   ```javascript
+   // vite.config.js
+   export default {
+     base: '/repo-name/', // Replace 'repo-name' with your repository name
+     // ...
+   }
