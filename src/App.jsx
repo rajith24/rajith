@@ -22,7 +22,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/rajith/" exact  element={<Home />}/>
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/rajith/portfolio" element={<Portfolio />} />
       </Routes>
     </Router>
     </React.Fragment>

@@ -5,12 +5,13 @@ import { animate, useMotionValue } from "framer-motion";
 import { motion } from "framer-motion-3d";
 import { atom, useAtom } from "jotai";
 import { useEffect, useRef } from "react";
+import powerBI from "../../public/projects/pbi.png";
 
 export const projects = [
   {
     title: "Power BI",
-    url: "projects/pbi.png",
-    image: "projects/pbi.png",
+    url: powerBI,
+    image: powerBI,
     description: "SQL query Azure Cosmos Database and create interactive visulaization.",
   },
   {
