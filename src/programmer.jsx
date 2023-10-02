@@ -5,7 +5,7 @@ import { OrbitControls } from '@react-three/drei'; // Import OrbitControls corre
 // import glbModel from 'programmer.glb';
 import { useAnimations, useFBX, useGLTF } from "@react-three/drei";
 import * as THREE from "three";
-import GLBModel from  './Output.jsx'
+import GLBModel from  './components/Output.jsx'
 
 // const glbModel = useGLTF.preload("./programmer.glb");
 

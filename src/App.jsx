@@ -21,7 +21,7 @@ function App() {
   
     <Router>
       <Routes>
-        <Route path="/" exact  element={<Home />}/>
+        <Route path="/rajith/" exact  element={<Home />}/>
         <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
     </Router>
