@@ -49,7 +49,7 @@ function DesignDiv() {
     
       const handleExplore = () => {
         // Redirect to a new link, e.g., '/newpage'
-        navigate('/portfolio');
+        navigate('/rajith/portfolio');
       };
 
     return (

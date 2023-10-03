@@ -6,6 +6,10 @@ import { motion } from "framer-motion-3d";
 import { atom, useAtom } from "jotai";
 import { useEffect, useRef } from "react";
 import powerBI from "../../public/projects/pbi.png";
+import fileExpUpload from "../../public/projects/fileExpUpload.jpg";
+import Roomba from "../../public/projects/roomba.jpg";
+import Lidar from "../../public/projects/lidar.jpg";
+import Carla from "../../public/projects/carla.jpg";
 
 export const projects = [
   {
@@ -16,26 +20,26 @@ export const projects = [
   },
   {
     title: "Azure Storage",
-    url: "projects/fileExpUpload.jpg",
-    image: "projects/fileExpUpload.jpg",
+    url: fileExpUpload,
+    image: fileExpUpload,
     description: "Created interactive UI/UX for Azure Blob Storage.",
   },
   {
     title: "Welcome Page",
     url: "https://www.youtube.com/watch?v=2eMzcFr_I3M",
-    image: "projects/roomba.jpg",
+    image: Roomba,
     description: "Roomba robot vaccuming the welcome text.",
   },
   {
     title: "CARLA / ROS",
     url: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6693139267880804352?compact=1",
-    image: "projects/lidar.jpg",
+    image: Lidar,
     description: "Shows Camera/Lidar sensor data mapped in ROS.",
   },
   {
     title: "Matlab ROS",
     url: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6712703143462920192?compact=1",
-    image: "projects/carla.jpg",
+    image: Carla,
     description: "Shows car controlled in CARLA environment using ROS",
   },
 ];
