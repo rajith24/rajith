@@ -166,7 +166,7 @@ function DesignDiv() {
                             <h1>Hi, I'm Rajith</h1>
                         </div>
                         <div className="nameTextAnimate" style={{ marginLeft: "30px" }}>
-                            <h3>Frontend Developer</h3>
+                            <h3>Software Developer</h3>
                         </div>
                         <span style={{ color: 'antiquewhite' }}>
 

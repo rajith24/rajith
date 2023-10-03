@@ -70,7 +70,7 @@ const AboutSection = (props) => {
       >
         I'm an interactive
         <br />
-        Frontend Developer
+        Web Developer
       </motion.p>
       <motion.button
         onClick={() => setSection(3)}
@@ -97,20 +97,32 @@ const AboutSection = (props) => {
 
 const skills = [
   {
-    title: "React JS / Nodejs",
+    title: "React JS / Node JS",
     level: 80,
   },
   {
-    title: "Python / Azure",
+    title: "MongoDB/ PostgreSQL/ CosmosDB",
+    level: 80,
+  },
+  {
+    title: "Azure DevOps/ GitLab/ GitHub",
+    level: 80,
+  },
+  {
+    title: "Microsoft Azure / Power BI",
+    level: 80,
+  },
+  {
+    title: "Python / C++",
     level: 80,
   },
   {
     title: "Threejs / React Three Fiber",
-    level: 30,
+    level: 40,
   },
   {
     title: "3D Modeling",
-    level: 30,
+    level: 40,
   },
 ];
 const languages = [
@@ -119,7 +131,7 @@ const languages = [
     level: 100,
   },
   {
-    title: "DE German",
+    title: "de German",
     level: 40,
   },
 ];
