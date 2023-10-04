@@ -4,6 +4,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "proxy": "http://localhost:3001",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
@@ -26,10 +27,12 @@
     "jotai": "^2.1.1",
     "leva": "^0.9.34",
     "nodemailer": "^6.9.5",
+    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
     "react-three-fiber": "^6.0.13",
+    "socket.io": "^4.7.2",
     "three": "^0.146.0"
   },
   "devDependencies": {
