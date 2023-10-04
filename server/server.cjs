@@ -12,6 +12,7 @@ const dotenv = require('dotenv');
 var debug = require('debug')('express-react:server');
 var http = require('http');
 const path = require('path');
+const logger = require('morgan');
 
 dotenv.config();
 
@@ -29,7 +30,7 @@ app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
-// app.use(logger('dev'));
+app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 // app.use(cookieParser());
@@ -89,8 +90,8 @@ function normalizePort(val) {
   return false;
 }
 
-// const PORT = process.env.PORT || 3001;
-var port = normalizePort(process.env.PORT || '3001');
+const port = process.env.PORT || 3001;
+// var port = normalizePort(process.env.PORT || '3001');
 app.set('port', port);
 
 /**

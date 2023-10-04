@@ -8,7 +8,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "dev": "vite",
+    "dev": "concurrently \"vite\" \"npm run start-server\"",
+    "start-server": "node server.cjs",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -26,6 +27,7 @@
     "gsap": "^3.12.0",
     "jotai": "^2.1.1",
     "leva": "^0.9.34",
+    "morgan": "^1.10.0",
     "nodemailer": "^6.9.5",
     "path": "^0.12.7",
     "react": "^18.2.0",
@@ -41,6 +43,7 @@
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.14",
+    "concurrently": "^8.2.1",
     "cross-env": "^7.0.3",
     "gh-pages": "^6.0.0",
     "gltf-pipeline": "^4.1.0",

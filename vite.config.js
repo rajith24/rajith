@@ -18,6 +18,13 @@ export default defineConfig(({ mode }) => {
           searchForWorkspaceRoot(process.cwd()),
           path.resolve(__dirname, 'server.cjs')],
       },
+      proxy: {
+        '/api': {
+          target: 'http://localhost:3001', // Replace with your backend server URL
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api/, '/api'),
+        },
+      },
     },
     // server: 'server/server.js',
     // server: {
@@ -38,12 +45,12 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         // Add the custom server entry point to the input options
         input: {
-          main: path.resolve(__dirname, 'src/main.jsx'), // Replace with your main entry file
+          main: path.resolve(__dirname, 'index.html'), // Replace with your main entry file
           server: path.resolve(__dirname, 'server.cjs'), // Add your custom server entry file here
         },
       },
       outDir: 'dist',
-      sourcemap: true,
+      sourcemap: false,
       minify: true,
       chunkSizeWarningLimit: 10000000, // Set your preferred limit in bytes
     }
